@@ -10,25 +10,135 @@
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/laptop_1f4bb.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contato.css" />
   </head>
   <body>
     <header>
-      <nav id="nav">
+      <nav>
         <div class="logo">
-          <img src="./assets/svg/Logo.svg" alt="logo" />
+          <!-- <img src="./assets/svg/Logo.svg" alt="logo" /> -->
+          <h1>TechBlog</h1>
         </div>
+
         <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="#">Blog???</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <!-- <li><a href="#">Blog</a></li> -->
           <li><a href="./equipe.html">Equipe</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <section>
+      <div class="container">
+        <div class="contact-container">
+          <form>
+            <h2>Entre em contato com a gente!</h2>
 
-    <footer>TechBlog &copy;</footer>
+            <fieldset id="usuario" class="fix">
+              <legend>Dados Básicos</legend>
+              <p>
+                <label for="cNome"> Nome: </label>
+                <input
+                  type="text"
+                  name="tNome"
+                  id="cNome"
+                  size="60"
+                  maxlength="100"
+                  placeholder="Nome completo"
+                />
+              </p>
+
+              <p>
+                <label for="cMail"> E-mail:</label>
+                <input
+                  type="email"
+                  name="tMail"
+                  id="cMail"
+                  size="30"
+                  maxlength="50"
+                  placeholder="E-mail do usuário"
+                />
+              </p>
+
+              <p><label for="cNasc">Data de nascimento:</label><input type="date" name="tNasc" id="cNasc"/></p>
+            </fieldset>
+
+            <fieldset id="sexo" class="fix">
+              <legend>Sexo</legend>
+              <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label></br></br>	
+              <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label></br></br>
+              <input type="radio" name="tSexo" id="cIndef"/><label for="cIndef">Outro</label>
+            </fieldset>
+
+            <fieldset id="mensagem" class="fix">
+              <legend>Mensagem para contato</legend>
+              <label for="cMsg" class="fixlabel"></label>
+              <textarea name="tMsg" id="cMsg" cols="50" rows="6" placeholder="Deixe aqui sua mensagem para nós!"></textarea>
+            </fieldset>
+
+            <fieldset id="endereco"><legend>Endereço</legend>
+              <p><label for="cEnd">Logradouro:</label> <input type="text" name="tEnd" id="cEnd" size="50" maxlength="80" placeholder="Nome da Rua/Av/etc"/></p>
+              <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" size="6" min="0" max="100000" placeholder="Núm. log."/></p>
+              <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" size="20" maxlength="35" placeholder="Sua cidade"/></p>
+              <p><label for="cEst">Estado:</label>
+        
+              <select name="tEst" id="cEst">
+                <option value="" selected disabled>Escolha um estado</option>
+                <optgroup label="Região Sul">
+                  <option value="PR">Paraná</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+        
+                <optgroup label="Região Sudeste">
+                  <option value="SP">São Paulo</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                
+                <optgroup label="Região Centro-Oeste">
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MT">Mato Grosso</option>
+                </optgroup>
+        
+                <optgroup label="Região Norte">
+                  <option value="RO">Rondônia</option>
+                  <option value="AC">Acre</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="RR">Roraima</option>
+                  <option value="AP">Amapá</option>
+                  <option value="PA">Pará</option>
+                  <option value="TO">Tocantins</option>
+                </optgroup>
+        
+                <optgroup label="Região Nordeste">
+                  <option value="MA">Maranhão</option>
+                  <option value="PI">Piauí</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="SE">Sergipe</option>
+                </optgroup>
+              </select>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>TechBlog &copy;</p>
+        <p>
+          Made by
+          <a href="https://beacons.page/bryanauta" target="_blank">Bryanauta</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
