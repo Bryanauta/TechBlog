@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  background: black;
+}
+
+nav {
+  width: 64rem;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  margin-left: 25px;
+  display: flex;
+  width: 85%;
+  height: 85%;
+}
+
+.logo h1 {
+  margin-left: 25px;
+  color: white;
+}
+
+.logo h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 a:hover {
+  color: deepskyblue;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid deepskyblue;
+  transition: ease-in 0.2s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: deepskyblue;
+}
+
+/* SECTION */
+
+section.news {
+  padding-top: 50px;
+}
+
+.container {
+  width: 64rem;
+  margin: 0 auto;
+}
+
+/* NEWS */
+.news-background {
+  width: 100%;
+  height: 500px;
+  background: url(../img/javascript.png) center center;
+  background-size: cover;
+}
+
+.news-header h1 {
+  text-align: center;
+}
+
+.news-header h2 {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.news-header .name {
+  display: block;
+}
+
+.news-header .date {
+  display: inline-block;
+}
+
+.news-text {
+  margin: 0 25px 25px 0;
+  width: 100%;
+}
+
+.news-text::first-letter {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-container .avatar {
+  margin: 0px 10px 0px 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-container .social img {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.profile-info .name {
+  color: black;
+}
+
+.profile-info .date {
+  color: black;
+}
+
+.line {
+  margin: 0 25px 10px 0;
+  border: solid 1px black;
+  width: 100%;
+}
+
+.breadcrumb {
+  padding-bottom: 15px;
+  color: deepskyblue;
+}
+
+.breadcrumb a {
+  color: deepskyblue;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  color: deepskyblue;
+}
