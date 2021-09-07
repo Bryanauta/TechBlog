@@ -155,6 +155,10 @@ section.news {
   margin: 0;
 }
 
+.profile-container p {
+  margin: 0;
+}
+
 .profile-info .name {
   color: black;
 }
@@ -176,6 +180,10 @@ section.news {
 
 .breadcrumb a {
   color: deepskyblue;
+}
+
+p {
+  margin: 0 25px 25px 0;
 }
 
 /* FOOTER */
