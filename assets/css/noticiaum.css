@@ -20,6 +20,7 @@ header {
   height: 100px;
   background: black;
 }
+/* Adiciona as propriedes de estilização nas tag de navegação*/
 
 nav {
   width: 64rem;
@@ -57,6 +58,9 @@ nav {
 .logo h1 a:hover {
   color: deepskyblue;
 }
+
+/* Adiciona as propriedes de estilização nas listas de navegação*/
+
 
 nav ul {
   margin: 0;
